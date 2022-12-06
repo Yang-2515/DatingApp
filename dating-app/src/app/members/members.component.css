@@ -1,0 +1,6 @@
+div{
+    display: inline;
+}
+.clear {
+    clear: both;/* tránh tình trạng nhìu block*/
+}

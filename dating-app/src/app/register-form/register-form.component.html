@@ -1,0 +1,21 @@
+<div class="text-center">
+    <h1>Register Form</h1>
+</div>
+<form #registerForm="ngForm" (ngSubmit) = "register()">
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Username</label>
+        <input type="text" class="form-control" id="exampleInputusername" name="username" [(ngModel)] = "userRegister.Username">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" [(ngModel)] = "userRegister.Email">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)] = "userRegister.Password">
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary" (click) = "register()">Submit</button>
+        <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    </div>
+  </form>
